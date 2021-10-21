@@ -34,9 +34,12 @@ export const RowSelection = () => {
         return [
           {
             id: "selection",
-            Header: ({ getToggleAllRowsSelectedProps }) => (
-              <Checkbox {...getToggleAllRowsSelectedProps()} />
-            ),
+            Header: "Action",
+            // <>
+            //   <p>Action</p>
+            //   {/* <Checkbox {...getToggleAllRowsSelectedProps()} /> */}
+            // </>,
+
             Cell: ({ row }) => (
               <Checkbox {...row.getToggleRowSelectedProps()} />
             ),

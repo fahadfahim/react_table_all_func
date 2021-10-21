@@ -80,7 +80,7 @@ export const FilteringTable = () => {
             );
           })}
         </tbody>
-        <tfoot>
+        {/* <tfoot>
           {footerGroups.map((footerGroup) => (
             <tr {...footerGroup.getFooterGroupProps()}>
               {footerGroup.headers.map((column) => (
@@ -88,7 +88,7 @@ export const FilteringTable = () => {
               ))}
             </tr>
           ))}
-        </tfoot>
+        </tfoot> */}
       </table>
     </>
   );

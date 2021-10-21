@@ -16,10 +16,7 @@ export const BasicTable = () => {
     footerGroups,
     rows,
     prepareRow,
-  } = useTable({
-    columns,
-    data,
-  });
+  } = useTable({ columns, data });
   //these are func and arrays that the useTable hook from react table package given to us enable easy table creation
   // =
   //     tableInstance;

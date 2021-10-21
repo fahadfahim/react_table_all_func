@@ -26,6 +26,10 @@ export const ColumnHiding = () => {
     columns,
     data,
   });
+  console.log(allColumns);
+  const slCl = allColumns.slice(0, 3)
+  console.log(slCl);
+  console.log(columns);
   //these are func and arrays that the useTable hook from react table package given to us enable easy table creation
   // =
   //     tableInstance;
@@ -45,6 +49,13 @@ export const ColumnHiding = () => {
       ))}
       <table {...getTableProps()}>
         <thead>
+          {/* {slCl.map((sl) => (
+            <tr {...sl.getHeaderGroupProps()}>
+              {sl.Header.map((cl) => (
+                <th {...cl.getHeaderProps()}>{cl.render("Header")}</th>
+              ))}
+            </tr>
+          ))} */}
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
